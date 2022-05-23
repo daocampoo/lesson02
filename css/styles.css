@@ -1,0 +1,60 @@
+/*
+Color Palette: 
+#0A090C
+#F0EDEE
+#07393C
+#2C666E
+#90DDF0
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 20%;
+}
+
+body {
+    background: #F0EDEE;
+}
+
+header {
+    color: #F0EDEE;
+    background-color: #07393C;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+section {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.projects{
+
+}
+
+.work {
+    background: #2C666E;
+}
+
+.edu {
+    background: #90DDF0;
+}
+
+footer {
+    background: #0A090C;
+    color: #F0EDEE;
+    text-align: center;
+    padding: 1em;
+}
+
+footer ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

@@ -7,18 +7,37 @@ Color Palette:
 #90DDF0
 */
 
+/* Global Elements */
+
 * {
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-img {
-    width: 20%;
 }
 
 body {
     background: #F0EDEE;
+    margin: 0;
 }
+
+section {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+img {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 0 ;
+}
+
+/* About/Profile */
 
 header {
     color: #F0EDEE;
@@ -27,22 +46,25 @@ header {
     padding-bottom: 1em;
 }
 
-section {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
+/* Projects/Portfolio */
 
 .projects{
     background: #F0EDEE;
 }
 
+/* Work Experience */
+
 .work {
     background: #2C666E;
 }
 
+/* Education */
+
 .edu {
     background: #90DDF0;
 }
+
+/* Footer Content */
 
 footer {
     background: #0A090C;
@@ -53,8 +75,4 @@ footer {
 
 footer ul {
     list-style: none;
-}
-
-a {
-    text-decoration: none;
 }

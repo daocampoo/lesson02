@@ -9,30 +9,46 @@ Color Palette:
 
 /* Global Elements */
 
-* {
+html {
     box-sizing: border-box;
+}    
+
+*, *:before,*:after {
+    box-sizing: inherit;
 }
 
 body {
     background: #F0EDEE;
     margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
 section {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 0;
 }
 
 img {
-    width: 50%;
+    width: 60%;
 }
 
 a {
     text-decoration: none;
 }
 
+h1, h2 {
+    font-family: 'Macondo', 'cursive';
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
 .wrapper {
-    width: 800px;
+    width: 700px;
     margin: 0 auto;
     padding: 20px 0 ;
 }
@@ -42,8 +58,7 @@ a {
 header {
     color: #F0EDEE;
     background-color: #07393C;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 0;
 }
 
 /* Projects/Portfolio */
@@ -52,10 +67,22 @@ header {
     background: #F0EDEE;
 }
 
+.projectitem {
+    overflow: hidden;
+}
+
+.projectitem img {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
 /* Work Experience */
 
 .work {
     background: #2C666E;
+    color:#F0EDEE;
+    clear: both;
 }
 
 /* Education */
@@ -69,10 +96,10 @@ header {
 footer {
     background: #0A090C;
     color: #F0EDEE;
-    text-align: center;
-    padding: 1em;
+    margin: 0 auto;
 }
 
 footer ul {
     list-style: none;
+    text-align: left;
 }

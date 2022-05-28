@@ -53,12 +53,63 @@ h1 {
     padding: 20px 0 ;
 }
 
+/* Navigation */
+
+nav {
+    width: 100%;
+}
+
+ul#nav {
+    display: inline-block;
+}
+
+nav, nav ul {
+    list-style: none;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    width: 130px;
+    color: #fff;
+}
+
+nav li {
+    float: left;
+    width: 130px;
+}
+
+nav li ul {
+    position: relative;
+    width: 130px;
+    left: -999em;
+}
+
+nav li:hover ul {
+    left: auto;
+}
+
+nav ul#nav li ul li a {
+    color: #90DDF0;
+}
+
+nav ul#nav li ul li a:hover {
+    text-decoration: underline;
+}
+
 /* About/Profile */
 
 header {
     color: #F0EDEE;
     background-color: #07393C;
     padding: 1em 0;
+    text-align: center;
+}
+
+header p {
+    margin: 0;
 }
 
 /* Projects/Portfolio */

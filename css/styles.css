@@ -30,16 +30,24 @@ section {
 }
 
 img {
-    width: 60%;
+    width: 500px;
 }
 
 a {
     text-decoration: none;
+    color: #fff;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.projectitem h3 {
+    margin-bottom: 20px;
 }
 
 h1, h2 {
     font-family: 'Macondo', 'cursive';
-    text-align: center;
     margin: 0;
 }
 
@@ -47,8 +55,26 @@ h1 {
     font-size: 40px;
 }
 
+.item-details h3 + p {
+    font-style: italic;
+}
+
+.item-details h3 ~ p {
+    margin: 0;
+}
+
+.divider > section {
+    border-bottom: 1px dashed #0A090C;;
+    padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
 .wrapper {
-    width: 700px;
+    max-width: 800px;
+    width: 85%;
     margin: 0 auto;
     padding: 20px 0 ;
 }
@@ -67,7 +93,7 @@ nav, nav ul {
     list-style: none;
     line-height: 1;
     padding: 0;
-    margin: 0;
+    margin: 16px 0 0 0;
 }
 
 nav a {
@@ -105,7 +131,6 @@ header {
     color: #F0EDEE;
     background-color: #07393C;
     padding: 1em 0;
-    text-align: center;
 }
 
 header p {
@@ -115,42 +140,99 @@ header p {
 /* Projects/Portfolio */
 
 .projects{
-    background: #F0EDEE;
+    background: #2C666E;
+    color: #F0EDEE;
 }
 
 .projectitem {
     overflow: hidden;
 }
 
-.projectitem img {
-    position: relative;
-    float: left;
-    margin-right: 20px;
-}
-
 /* Work Experience */
 
 .work {
-    background: #2C666E;
-    color:#F0EDEE;
+    background: #F0EDEE;
+    color: #0A090C;
     clear: both;
 }
 
 /* Education */
 
 .edu {
-    background: #90DDF0;
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position:right;
+    padding-bottom: 100px;
+}
+
+.edu p {
+    width: 60%;
 }
 
 /* Footer Content */
 
 footer {
-    background: #0A090C;
+    background: #07393C;
     color: #F0EDEE;
-    margin: 0 auto;
 }
 
 footer ul {
     list-style: none;
     text-align: left;
+}
+
+/* Contact Information */
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Responsive */
+@media screen and (min-width: 750px) {
+
+    header, footer { 
+        text-align: center;
+    }
+
+    .projectitem img {
+        position: relative;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        line-height: 1;
+    }
+
+    .contact-list a {
+        padding: 5px;
+    }
+
+    nav {
+        display: none;
+    }
 }
